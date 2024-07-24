@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Permanent Marker", cursive;
+
+}
+
+ul {
+    height: 80px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    font-size: 20px;
+} 
+
+li:hover{
+    color: #ffff;
+    transition: all 200ms linear;
+}
+
+a:hover{
+    color: #2a9d8f;
+    font-size: 25px;
+    transition: all 200ms linear;
+    text-decoration: underline;
+    
+}
+
+.menu{
+    color: darkorchid;
+    background-color: #0d1b2a;
+    
+}
+    
+
+#section01{
+    background-color: #03071e;
+
+}
+
+#section02{
+    background-color: #1b263b;
+
+}
+
+#section03{
+    background-color: #415a77;
+
+}
+
+#section04{
+    background-color: #778da9;
+
+}
+
+section{
+    height: 70vh;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
