@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
   <header class="menu">
@@ -20,17 +21,50 @@
   </header>
  <main>
         <section id="section01">
-            <h2>parte 01</h2>
+            <div class="section01-left-div">
+                <img src="../assets/images/imgTeste.jpg" alt="imagem teste" 
+                class="img-style-section01">
+            </div>
+            <div class="section01-right-div">
+            <h2 class="l01">Nome do cidadão</h2>
+            <p class="p01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, consequuntur quod provident iusto tempora, voluptas inventore architecto quasi ullam error, perferendis magni consectetur aperiam praesentium! Repellat omnis excepturi corrupti explicabo!</p>
+            </div>
+
         </section>
         <section id="section02">
             <h2>parte 02</h2>
         </section>
         <section id="section03">
-            <h2>parte 03</h2>
+            <div class="sesction03-left-div">
+            <h2>LANDING PAGE WEBSITE DESIGN TEMPLATE</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi aperiam inventore possimus laboriosam sit porro, cumque maxime voluptas est ducimus ullam eos commodi optio. Optio esse provident adipisci magnam aspernatur.</p>
+        </div>
+        <div class="section03-right-div">
+            <img src="../assets/images/ImgTeste2.jpg" alt="Imagem teste2"
+            class="img-style-section03">
+        </div>
         </section>
         <section id="section04">
-            <h2>parte 04</h2>
-        </section>
+            <div class="left-contact">
+                <h2 class="heading-contact">Contato</h2>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                <label for="mensagem">Mensagem</label>
+                <input type="text" id="mensagem">
+                </div>
+                <button onclick="conferirMensagemWhatssApp()">Conferir Mensagem</button>
+                </div>
+                <div class="right-contact">
+                    <div>
+                        <p>Nome: <span id="confNome"></span></p>
+                        <p>Mensagem: <span id="confMsg"></span></p>
+                    </div>
+                    <button onclick="enviar()">ZAP</button>
+                </div>
+    </section>
   </main>
  </body>
 </html>

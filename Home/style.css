@@ -33,36 +33,141 @@ a:hover{
 .menu{
     color: darkorchid;
     background-color: #0d1b2a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
     
 }
     
 
 #section01{
     background-color: #03071e;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 80px ;
+    padding-left: 20px ;
+    padding-right: 20px;
 }
 
 #section02{
     background-color: #1b263b;
+    height: 70vh;
 
 }
 
 #section03{
     background-color: #415a77;
-
+    height: 70vh;
 }
 
 #section04{
-    background-color: #778da9;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    padding-top: 80px;
+}
+
+.section01-left-div{   
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 999px;
+    transition: all 200ms linear;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img-style-section01{
+    width: 500px;
+    height: auto;
+    transition: all 200ms linear;
+    filter: grayscale(100%);
 
 }
 
-section{
-    height: 70vh;
+.img-style-section01:hover{
+    transform: scale(1.2);
+    transition: all 200ms linear;
+    cursor: crosshair;
+    filter: grayscale(0);
+}
+
+.section01-right-div{
+    width: 800px;
+    height: 500px;
+    flex-direction: column;
+    align-items: left;
+}
+
+.heading-contact{
+    width: 100%;
+    text-align: center;
+}
+
+.left-contact{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+
+
+}
+
+.right-contact{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+
 }
 
 a{
     text-decoration: none;
     color: inherit;
 }
+
+@media (width <=600px){
+  .section01-left-div{
+    width: 300px;
+ }
+    
+  .img-style-section01{
+    width: 300px;   
+}
+
+.l01{
+    width: 100%;
+    text-align: center;
+   }
+   
+   .p01{
+    width: 100%;
+    text-align: center;
+   }
+
+ul{
+    gap: 2vw;
+    font-size: 16px;
+}
+}
+
 
