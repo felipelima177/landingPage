@@ -1,25 +1,30 @@
-var nomeGlobal
-var msgGlobal
+var nomeGlobal;
+var msgGlobal;
 
-function conferirMensagemWhatssApp(){
-    var nome = document.getElementById("nome").value
-    var mensagem = document.getElementById("mensagem").value
-    var confDiv = document.getElementById("rightDiv")
-    console.log(confDiv)
-    
+function conferirMensagemWhatsApp() {
+  var nome = document.getElementById("nome").value;
+  var mensagem = document.getElementById("mensagem").value;
+  var confDiv = document.getElementById("rightDiv");
 
-    nomeGlobal = nome
-    msgGlobal = mensagem
-    confDiv.style.display="flex"
-    document.getElementById("confNome").textContent = nome
-    document.getElementById("confMsg").textContent = mensagem
+  nomeGlobal = nome;
+  msgGlobal = mensagem;
+
+  confDiv.style.display = "flex";
+  document.getElementById("confNome").textContent = nome;
+  document.getElementById("confMsg").textContent = mensagem;
 }
 
-function enviar(){
-    var numeroTelefone = "5541997766996"
+function enviar() {
+  var numeroTelefone = "5541999999999";
 
-    var link = "https://wa.me/" + numeroTelefone + "?text=Nome: " + nomeGlobal + " - " + "Mensagem: " + msgGlobal
+  var link =
+    "https://wa.me/" +
+    numeroTelefone +
+    "?text=Nome: " +
+    nomeGlobal +
+    " - " +
+    "Mensagem: " +
+    msgGlobal;
 
-    window.open(link, '_blank')
-
+  window.open(link, "_blank");
 }
