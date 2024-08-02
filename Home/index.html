@@ -32,7 +32,26 @@
 
         </section>
         <section id="section02">
-            <h2>parte 02</h2>
+            <h2 class="tec-title">Tecnologias</h2>
+            <div class="wrap-tecs"> 
+                <div>
+                    <img width="100px" height="auto" src="../assets/images/html.png" alt="">
+                <br>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, accusantium. Molestiae alias doloribus nisi velit hic molestias, nostrum, ipsam necessitatibus est a harum sapiente fugit! Mollitia ad officiis doloribus dolorem!
+                </p>
+                </div>
+                <div>
+                    <img width="100px" height="auto" src="../assets/images/css-3.png" alt="">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nobis sint facere facilis nostrum, voluptatem sit? Vel est dicta facilis unde commodi enim maxime sapiente illo. Libero illum quo ducimus.</p>
+                </div>
+                <div>
+                    <img width="100px" height="auto" src="../assets/images/js.png" alt="">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nobis sint facere facilis nostrum, voluptatem sit? Vel est dicta facilis unde commodi enim maxime sapiente illo. Libero illum quo ducimus.</p>
+                </div>
+            </div>
         </section>
         <section id="section03">
             <div class="section03-left-div">
@@ -48,20 +67,21 @@
         <section id="section04">
             <div class="left-contact">
                 <h2 class="heading-contact">Contato</h2>
-                <div>
+                <div style="display: flex; flex-direction: column; gap: 0.5vh">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome">
                 </div>
-                <div>
+                <div style="display: flex; flex-direction: column; gap: 0.5vh">
                 <label for="mensagem">Mensagem</label>
                 <input type="text" id="mensagem">
                 </div>
+                <br>
                 <button onclick="conferirMensagemWhatssApp()">Conferir Mensagem</button>
                 </div>
-                <div class="right-contact">
+                <div class="right-contact" id="rightDiv">
                     <div>
                         <p>Nome: <span id="confNome"></span></p>
-                        <p>Mensagem: <span id="confMsg"></span></p>
+                        <p class="text">Mensagem: <span id="confMsg"></span></p>
                     </div>
                     <button onclick="enviar()">ZAP</button>
                 </div>

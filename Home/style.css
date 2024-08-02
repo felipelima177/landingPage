@@ -15,33 +15,33 @@ ul {
     justify-content: center;
     gap: 4vw;
     font-size: 20px;
-} 
+}
 
-li:hover{
+li:hover {
     color: #ffff;
     transition: all 200ms linear;
 }
 
-a:hover{
+a:hover {
     color: #2a9d8f;
     font-size: 25px;
     transition: all 200ms linear;
     text-decoration: underline;
-    
+
 }
 
-.menu{
+.menu {
     color: darkorchid;
     background-color: #0d1b2a;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    
-}
-    
 
-#section01{
+}
+
+
+#section01 {
     background-color: #03071e;
     display: flex;
     align-items: center;
@@ -50,43 +50,49 @@ a:hover{
     flex-wrap: wrap;
     height: auto;
     padding-top: 150px;
-    padding-bottom: 80px ;
-    padding-left: 20px ;
+    padding-bottom: 80px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 
-#section02{
-    background-color: #1b263b;
-    height: 70vh;
+#section02 {
+   width: 100%;
+   height: auto;
+   padding-bottom: 80px;
+   padding-top: 80px;
+   background-color: #0d1b2a;
+   color: darkorchid;
 
 }
 
-#section03{
+#section03 {
     color: #ffff;
-    background: rgb(34,16,59);
-    background: linear-gradient(90deg, rgba(34,16,59,1) 0%, rgba(54,4,57,1) 49%, rgba(13,0,79,1) 100%);
+    background: rgb(34, 16, 59);
+    background: linear-gradient(90deg, rgba(34, 16, 59, 1) 0%, rgba(54, 4, 57, 1) 49%, rgba(13, 0, 79, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2vw;
     flex-wrap: wrap;
     padding-top: 150px;
-    padding-bottom: 80px ;
-    padding-left: 20px ;
+    padding-bottom: 80px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 
-#section04{
-    height: 70vh;
+#section04 {
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2vw;
     padding-top: 80px;
+    padding-bottom: 80px;
+    flex-wrap: wrap;
 }
 
-.section01-left-div{   
+.section01-left-div {
     width: 500px;
     height: 500px;
     position: relative;
@@ -94,10 +100,9 @@ a:hover{
     border-radius: 999px;
     transition: all 200ms linear;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
-    
 }
 
-.img-style-section01{
+.img-style-section01 {
     width: 500px;
     height: auto;
     transition: all 200ms linear;
@@ -105,58 +110,60 @@ a:hover{
 
 }
 
-.img-style-section01:hover{
+.img-style-section01:hover {
     transform: scale(1.2);
     transition: all 200ms linear;
     cursor: crosshair;
     filter: grayscale(0);
 }
 
-.section01-right-div{
+.section01-right-div {
     width: 800px;
     height: 500px;
     flex-direction: column;
     align-items: left;
 }
 
-.section03-left-div{
+.section03-left-div {
     width: 800px;
     height: 500px;
     flex-direction: column;
     align-items: left;
 }
 
-.section03-left-div h2
-{
+.section03-left-div h2 {
     font-size: 40px;
 
 }
 
-.section03-left-div p
-{
+.section03-left-div p {
     margin-top: 40px;
-    font-size:20px;
+    font-size: 20px;
 
 }
 
-.section03-left-div button{
-    color:#ffff ;
-    background-color:rgb(111, 37, 147);;
+.section03-left-div button {
     margin-top: 125px;
-    padding: 20px;
     width: 400px;
     border-radius: 99px;
-    font-size: 20px;
-}
-.section03-left-div button:hover{
-    color: #2a9d8f;
-    font-size: 25px;
+    padding: 10px 30px;
+    border-radius: 20vw;
+    border: none;
+    border: 2px solid #6f2593;
+    color: #6f2593;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #9f3ad1;
     transition: all 200ms linear;
-    text-decoration: underline;
+}
+
+.section03-left-div button:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    cursor: pointer;
 
 }
 
-.section-03-right-div{
+.section-03-right-div {
     width: 500px;
     height: 500px;
     position: relative;
@@ -164,104 +171,172 @@ a:hover{
     border-radius: 999px;
     transition: all 200ms linear;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
-.img-style-section03{
+.img-style-section03 {
     width: 700px;
     height: auto;
     transition: all 200ms linear;
 }
 
-.heading-contact{
+.heading-contact {
     width: 100%;
     text-align: center;
 }
 
-.left-contact{
+.left-contact {
     width: 300px;
     height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 1.2vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
+    padding: 20px;
 
 
 }
 
-.right-contact{
-    width: 300px;
+.right-contact {
+    width: auto;
     height: 300px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
+    padding: 20px;
 
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-@media (width <=600px){
-  .section01-left-div{
-    width: 300px;
- }
-    
-  .img-style-section01{
-    width: 300px;   
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20vw;
+    border: none;
+    border: 2px solid #6f2593;
+    color: #6f2593;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #9f3ad1;
+    transition: all 200ms linear;
+    width: 250px;
+
 }
 
-.l01{
-    width: 100%;
-    text-align: center;
-   }
-   
-   .p01{
-    width: 100%;
-    text-align: center;
-   }
-
-   .section03-left-div{
-    width: 300px;
- }
-
- .section03-right-div{
-    width: 300px;
- }
-    
-  .img-style-section03{
-    width: 300px;   
+button:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    cursor: pointer;
 }
 
-.l03{
+#nome,
+#mensagem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1vw;
+    width: 250px;
+}
+.tec-title{
     width: 100%;
     text-align: center;
-   }
-   
-.p03{
-    width: 100%;
-    text-align: center;
-   }
-
-.b03{
-    width: 100%;
-    text-align: center;
-    
+    font-size: 2rem;
 }
 
-ul{
+.wrap-tecs{
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2vw;
-    font-size: 16px;
+    padding: 50px;
+    flex-wrap: wrap;
 }
 
+.wrap-tecs > div{
+    background-color: #ffff;
+    color: #03071e ;
+    width: 300px;
+    height: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: #6f2593(0, 0, 0, 0.35) 0px 5px 15px;
 }
+@media (width <=600px) {
+    .section01-left-div {
+        width: 300px;
+        height: 300px;
+    }
 
+    .img-style-section01 {
+        width: 300px;
+    }
 
+    .l01 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .p01 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section03-left-div {
+        width: 300px;
+    }
+
+    .section03-right-div {
+        width: 300px;
+    }
+
+    .img-style-section03 {
+        width: 300px;
+    }
+
+    .l03 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .p03 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .b03 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    ul {
+        gap: 2vw;
+        font-size: 16px;
+    }
+
+    #section04 {
+        gap: 3vh;
+    }
+
+    .right-contact {
+        width: 80%;
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    .text {
+        width: 200px;
+        max-height: auto;
+    }
+}
